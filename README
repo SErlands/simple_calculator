@@ -1,0 +1,30 @@
+Simple calculator
+
+Compile by: make
+
+Run by: ./simple_calculator <volintari textfile>
+
+------------------------------------------------
+When run the following commands is accepted:
+
+    <register> <operation> <value>
+    
+    <register> <operation> <register>
+    
+    print <register>
+    
+    quit
+-----------------------------------------------
+
+Look at test1.text, test2.test, test3.test for  
+examples on how a input textfile can look
+
+The calculator dose lazy evaluation, aka evaluation at print 
+for commands in the form of "<register> <operation> <register>".
+This is done by when the command is run the string of the 
+operation is saved and then evaluated when "print <register>"
+is called. 
+
+If more than one "<register> <operation> <register>"
+is done on the same left <register>, the latest string of
+the operations will be evaluated first
